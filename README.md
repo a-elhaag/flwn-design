@@ -1,15 +1,18 @@
 # flwn-design
 
-Source of truth for the Flwn design skill (`flwn-design/SKILL.md`, logo, palette, mockup).
+Source of truth for the Flwn design skill (`flwn-design/`: SKILL.md, logo, palette, mockup). Edit the skill here only.
 
-Edit the skill here only. A push to `main` runs `.github/workflows/sync.yml`, which opens a PR in each Flwn repo
-that copies `flwn-design/` into `.claude/skills/flwn-design/`.
+## How repos stay in sync
 
-## Setup
+Each Flwn repo has `.github/workflows/sync-flwn-design.yml` (template in `templates/`). It runs daily and on demand
+(Actions tab, Run workflow), copies `flwn-design/` into `.claude/skills/flwn-design/` and opens or updates the PR
+`chore/sync-flwn-design`. No token needed: this repo is public and the workflow uses the repo's own `GITHUB_TOKEN`.
+The repo setting "Allow GitHub Actions to create and approve pull requests" must be on.
 
-Add a repository secret `SYNC_TOKEN`: a fine-grained personal access token with access to the target repos and
-permissions Contents (read and write) and Pull requests (read and write).
+## New repo
 
-## Target repos
+```
+./add-to-repo.sh owner/repo
+```
 
-Listed in the matrix in `.github/workflows/sync.yml`. Add a repo there to include it.
+Opens a PR that adds the skill and the workflow, and turns on the Actions setting above.
