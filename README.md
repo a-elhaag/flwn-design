@@ -15,4 +15,5 @@ The repo setting "Allow GitHub Actions to create and approve pull requests" must
 ./add-to-repo.sh owner/repo
 ```
 
-Opens a PR that adds the skill and the workflow, and turns on the Actions setting above.
+Opens a PR that adds the skill and the workflow. Add `--allow-actions-prs` to also turn on the Actions setting above via gh.
+That setting also lets Actions approve PRs, so keep branch protection requiring a human review. The workflow token stays read-only by default.
