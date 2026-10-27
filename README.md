@@ -1,6 +1,6 @@
 # flwn-design
 
-Source of truth for the Flwn design skill (`flwn-design/`: SKILL.md, logo, palette, mockup). Edit the skill here only.
+Source of truth for the Flwn design skill (`flwn-design/`: SKILL.md, logo, palette). Edit the skill here only.
 
 ## How repos stay in sync
 

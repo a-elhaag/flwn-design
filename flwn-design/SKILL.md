@@ -5,7 +5,7 @@ description: Applies the Flwn visual identity (cream dotted canvas, five pastel 
 
 # Flwn Design
 
-Every Flwn surface must look like it came from the same board. Palette reference: `palette/palette.png`. Logo reference: `logo/` (section 6c). Note: `mockup/` predates palette v2 and uses fixed px. Use the tokens in this file, not the mockup's colors or units.
+Every Flwn surface must look like it came from the same board. Palette reference: `palette/palette.png`. Logo reference: `logo/` (section 6c).
 
 ## 0. Surfaces
 
